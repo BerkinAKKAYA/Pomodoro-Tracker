@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Tracker</title>
+
+    <!-- Chart.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+
+    <!-- CUSTOM -->
+    <script defer src="script/dataLoader.js"></script>
+    <script defer src="script/drawChart.js"></script>
+    <script defer src="script/saveName.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- FAVICON -->
+    <link rel="icon" href="https://berkinakkaya.github.io/img/favicon.png" />
+    <link rel="shortcut icon" href="https://berkinakkaya.github.io/img/favicon.png" />
+</head>
+<body>
+    <header>
+        <input
+            type="text"
+            value="Berkin"
+            id="name"
+            onblur="AddS()"
+            onfocus="RemoveS()"
+            onchange="SaveName()"
+            />
+        <h1>POMODORO TRACKER</h1>
+        <p>2020</p>
+    </header>
+    <canvas id="chart" width="2" height="1"></canvas>
+    <div class="panel">
+        <div class="btn">
+            <a href="boilerplate.txt" target="_blank">
+                <button>SEE BOILERPLATE</button>
+            </a>
+        </div>
+        <div class="btn">
+            <button onclick="ShowUploadPanel()">UPLOAD DATA</button>
+            <input type="file" onchange="Upload()" id="upload" />
+        </div>
+        <div class="btn">
+            <button onclick="PopulateRandom()">RANDOM DATA</button>
+        </div>
+    </div>
+</body>
+</html>
