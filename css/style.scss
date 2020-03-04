@@ -4,15 +4,34 @@
     font-family: monospace;
     outline: none;
     border: none;
+    overflow-x: hidden;
+    text-decoration: none;
+}
+
+body{
+    cursor: default;
 }
 
 header {
     margin: 50px 0;
     display: inline-block;
 
-    input, p { opacity: .3 }
-    input { width: 100% }
-    p { text-align: right }
+    p, a {
+        opacity: .3;
+
+        &:nth-child(1)      { text-align: left }
+        &:nth-last-child(1) { text-align: right }
+    }
+    a{
+        display: block;
+        float: right;
+        transition: opacity .2s, color .2s;
+
+        &:hover {
+            opacity: .6;
+            color: rgb(0, 0, 200);
+        }
+    }
 }
 
 header, canvas, .panel {

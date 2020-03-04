@@ -2,12 +2,14 @@
   margin: 0;
   padding: 0;
   font-family: monospace;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
   outline: none;
   border: none;
+  overflow-x: hidden;
+  text-decoration: none;
+}
+
+body {
+  cursor: default;
 }
 
 header {
@@ -15,16 +17,28 @@ header {
   display: inline-block;
 }
 
-header input, header p {
+header p, header a {
   opacity: .3;
 }
 
-header input {
-  width: 100%;
+header p:nth-child(1), header a:nth-child(1) {
+  text-align: left;
 }
 
-header p {
+header p:nth-last-child(1), header a:nth-last-child(1) {
   text-align: right;
+}
+
+header a {
+  display: block;
+  float: right;
+  -webkit-transition: opacity .2s, color .2s;
+  transition: opacity .2s, color .2s;
+}
+
+header a:hover {
+  opacity: .6;
+  color: #0000c8;
 }
 
 header, canvas, .panel {
@@ -36,6 +50,10 @@ header, canvas, .panel {
 
 canvas {
   max-width: 90vw;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 @media (min-width: 800px) {
