@@ -1,8 +1,9 @@
 # Pomodoro-Tracker
-Built using Chart.JS
-
 [GO TO APP](https://berkinakkaya.github.io/Pomodoro-Tracker)
 
-> [POMOLOG](https://pomolog-berkinakkaya.web.app) is the improved version of Pomodoro Tracker.
+[Pomolog](pomolog-berkinakkaya.web.app) is the mix of [Pomodoro Tracker][tracker] and [Pomodoro Clock](clock)
 
 ![Screenshot](https://berkinakkaya.github.io/Pomodoro-Tracker/img/Screenshot.jpg)
+
+[tracker]: https://github.com/BerkinAKKAYA/Pomodoro-Tracker
+[clock]: https://github.com/BerkinAKKAYA/Pomodoro-Clock
