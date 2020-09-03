@@ -1,7 +1,7 @@
 # Pomodoro-Tracker
 [GO TO APP](https://berkinakkaya.github.io/Pomodoro-Tracker)
 
-[Pomolog](pomolog-berkinakkaya.web.app) is the mix of [Pomodoro Tracker][tracker] and [Pomodoro Clock](clock)
+> **NOTE:** [Pomolog](pomolog-berkinakkaya.web.app) is the mix of [Pomodoro Tracker][tracker] and [Pomodoro Clock](clock)
 
 ![Screenshot](https://berkinakkaya.github.io/Pomodoro-Tracker/img/Screenshot.jpg)
 
